@@ -1,0 +1,145 @@
+html, body {
+    height: 100%;
+    font-family: 'Montserrat';
+  }
+
+.main{
+    background: linear-gradient(217deg, #FFF5DC, rgba(255,0,0,0) 70%),
+            linear-gradient(127deg, #91E2BB, rgba(0,255,0,0) 50%),
+            linear-gradient(306deg, #c3edfd, rgba(0,0,255,0) 95%) no-repeat;
+}
+
+.source{
+    background: linear-gradient(217deg, #FFF5DC, rgba(255,0,0,0) 70%),
+        linear-gradient(137deg, #c3edfd, rgba(0,0,255,0) 70%),
+        linear-gradient(300deg, #91E2BB, rgba(0,255,0,0) 50%),
+        linear-gradient(-20deg, #FFF5DC, rgba(255,0,0,0) 70%) no-repeat;
+}
+
+
+h1{
+    color: rgba(68, 65, 65, 0.815);
+    margin-top: 10%;
+    margin-left: 18%;
+    font-size: 22.5px;
+}
+
+nav a{
+    text-align: center;
+    margin: 3.5% 2.3% 2.5%;
+    display: inline-block;
+    padding: 0.5% 0.6%;
+    color:rgb(0, 0, 0);
+    border-radius: 3%;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#underline{
+    border-bottom: 1px grey solid;
+    
+}
+
+header img{
+    float: left;
+    width: 10%;
+    height: 20%;
+    margin-left: 18%;
+    margin-right: 3%;
+}
+
+p{
+    color: grey;
+    margin-left: 18%;
+    margin-top: 4%;
+    font-size: 14.5px;
+    line-height: 20.5px;
+    margin-bottom: 1.5%;
+}
+
+.mark a{
+    color:rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 2.5% 3.5% 2.5%;
+    display: inline-block;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-decoration: none;
+    text-align: center;
+    min-width: 16%;
+    line-height: 22px;
+}
+
+.mark{
+    margin-left: 14.5%;
+}
+
+.property{
+    float: right;
+    width: 30%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+#car{
+    margin-top: 10%;
+}
+
+input{
+    height: 30px;
+    padding: 2% 2%;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+div {
+    column-count: 2;
+    column-fill: balance;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 1.3%;
+    max-height: 400px;
+}
+
+.blue{
+    border: 2px solid #B1D8E8;
+    box-shadow: 0.4em 0.4em 5px 2px rgb(177, 216, 232);
+    border-radius: 5px;
+}
+
+.green{
+    border: 2px solid rgb(145,226,187, 0.5);
+    box-shadow: 0.4em 0.4em 5px 2px rgb(145,226,187, 0.5);
+    border-radius: 5px;
+}
+
+.submit{
+    width: 10%;
+    text-align: center;
+    margin-left: 31.5%;
+    margin-top: 1%;
+    background-color: white;
+    border: 2px solid rgb(192, 191, 191);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+}
+
+#home{
+    box-shadow: 0.3em 0.3em 5px 2px rgb(145,226,187, 0.5);
+}
+
+#auto{
+    box-shadow: 0.3em 0.3em 5px 2px #B1D8E8;
+}
+
+#problem{
+    margin-bottom: 1px;
+}
+
+.dv1{
+    max-height: 350px;
+}

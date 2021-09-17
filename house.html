@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>'The cost of house'</title>
+        <link rel="stylesheet" type="text/css" href="Valuation of collateral property.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="source">
+        <header>
+            <img src='bank.png'>
+            <nav> 
+                <a href="Valuation of collateral property.html">Главная</a>
+                <a>О сервисе</a>
+                <a>Обратная связь</a>
+            </nav>
+        </header>
+
+        <img class='property' src="house.png">
+        
+        <form name="realestate" action="https://83f5-109-252-84-162.ngrok.io" method="post" >
+            <div class="dv1">
+                <input class="blue" name="geo_lat" pattern="\d+(,\d{6})?" required placeholder="Широта"
+                title="положительное число(если требуется, 6 знаков после запятой)"/>
+                <input class="blue" name="geo_lon" pattern="\d+(,\d{6})?" required placeholder="Долгота"
+                title="положительное число(если требуется, 6 знаков после запятой)"/>
+                <input class="blue" name="region" list="regions" required placeholder="Регион"/>
+                <input class="blue" name="level" pattern="^[ 0-9]+$" required placeholder="Этаж квартиры в доме"
+                title="Этаж квартиры - натуральное число"/>
+                <input class="blue" name="levels" pattern="^[ 0-9]+$" required placeholder="Количество этажей"
+                title="Количество этажей - натуральное число"/>
+                <input class="green" name="rooms" pattern="^[ 0-9]+$" required placeholder="Количество комнат"
+                title="Количество комнат - натуральное число"/>
+                <input class="green" name="area" pattern="\d+(,\d{1})?" required placeholder="Площадь жилья"
+                title="Площадь жилья - положительное число(если требуется, один знак после запятой)"/>
+                <input class="green" name="kitchen_area" pattern="\d+(,\d{1})?" required placeholder="Площадь кухни"
+                title="Площадь жилья - положительное число(если требуется, один знак после запятой)"/>   
+                <input class="green" name="building_type" list="buildings" required placeholder="Тип здания"/>
+                <input id="problem" class="green" name="object_type" list="objects" required placeholder="Тип строения"/>
+            </div>
+            <button class="submit" type="submit"><b>Оценить</b></button> 
+        </form>
+
+        <datalist id="buildings">
+            <option value="Другое"></option>/>
+            <option value="Панельный дом"></option> />
+            <option value="Монолитный дом"></option> />
+            <option value="Кирпичный дом"></option> />
+            <option value="Блочный дом"></option> />
+            <option value="Деревянный дом"></option> />
+        </datalist>
+
+        <datalist id="objects">
+            <option value="Вторичное жилье"></option>/>
+            <option value="Жилье, купленное у застройщика (новое)"></option> />
+        </datalist>
+
+        <datalist id="regions">
+            <option value="Алтайский край"></option>/>
+            <option value="Амурская область"></option> />
+            <option value="Архангельская область"></option>/>
+            <option value="Астраханская область"></option> />
+            <option value="Белгородская область"></option>/>
+            <option value="Брянская область"></option> />
+            <option value="Владимирская область"></option>/>
+            <option value="Волгоградская область"></option> />
+            <option value="Вологодская область"></option>/>
+            <option value="Воронежская область"></option> />
+            <option value="г. Москва"></option>/>
+            <option value="Еврейская автономная область"></option> />
+            <option value="Забайкальский край"></option>/>
+            <option value="Ивановская область"></option> />
+            <option value="Иные территории, включая город и космодром Байконур"></option>/>
+            <option value="Иркутская область"></option> />
+            <option value="Кабардино-Балкарская Республика"></option>/>
+            <option value="Калининградская областьь"></option> />
+            <option value="Калужская область"></option>/>
+            <option value="Камчатский край"></option> />
+            <option value="Карачаево-Черкесская Республика"></option>/>
+            <option value="Кемеровская область — Кузбасс"></option> />
+            <option value="Кировская область"></option>/>
+            <option value="Костромская область"></option> />
+            <option value="Краснодарский край"></option>/>
+            <option value="Красноярский край"></option> />
+            <option value="Курганская областьа"></option>/>
+            <option value="Курская область"></option> />
+            <option value="Ленинградская область"></option>/>
+            <option value="Липецкая область"></option> />
+            <option value="Магаданская область"></option>/>
+            <option value="Московская область"></option> />
+            <option value="Мурманская область"></option>/>
+            <option value="Ненецкий автономный округ"></option> />
+            <option value="Нижегородская область"></option>/>
+            <option value="Новгородская область"></option> />
+            <option value="Новосибирская область"></option>/>
+            <option value="Омская область"></option> />
+            <option value="Оренбургская область"></option>/>
+            <option value="Орловская область"></option> />
+            <option value="Пензенская область"></option>/>
+            <option value="Пермский край"></option> />
+            <option value="Приморский край"></option>/>
+            <option value="Псковская область"></option> />
+            <option value="Республика Адыгея"></option>/>
+            <option value="Республика Алтай"></option> />
+            <option value="Республика Башкортостан"></option>/>
+            <option value="Республика Бурятия"></option> />
+            <option value="Республика Дагестан"></option>/>
+            <option value="Республика Ингушетия"></option> />
+            <option value="Республика Калмыкия"></option>/>
+            <option value="Республика Карелия"></option> />
+            <option value="Республика Коми"></option>/>
+            <option value="Республика Крым"></option> />
+            <option value="Республика Марий Эл"></option>/>
+            <option value="Республика Мордовия"></option> />
+            <option value="Республика Саха (Якутия)"></option>/>
+            <option value="Республика Северная Осетия — Алания"></option> />
+            <option value="Республика Татарстан"></option>/>
+            <option value="Республика Тыва"></option> />
+            <option value="Республика Хакасия"></option>/>
+            <option value="Ростовская область"></option> />
+            <option value="Рязанская область"></option>/>
+            <option value="Самарская область"></option> />
+            <option value="Санкт-Петербург"></option>/>
+            <option value="Саратовская область"></option> />
+            <option value="Сахалинская область"></option>/>
+            <option value="Свердловская область"></option> />
+            <option value="Севастополь"></option>/>
+            <option value="Смоленская область"></option> />
+            <option value="Ставропольский край"></option>/>
+            <option value="Тамбовская область"></option> />
+            <option value="Тверская область"></option>/>
+            <option value="Томская область"></option> />
+            <option value="Тульская область"></option>/>
+            <option value="Тюменская область"></option> />
+            <option value="Удмуртская Республика"></option>/>
+            <option value="Ульяновская область"></option> />
+            <option value="Хабаровский край"></option>/>
+            <option value="Ханты-Мансийский автономный округ — Югра"></option> />
+            <option value="Челябинская область"></option>/>
+            <option value="Чеченская Республика"></option> />
+            <option value="Чувашская Республика"></option>/>
+            <option value="Чукотский автономный округ"></option> />
+            <option value="Ямало-Ненецкий автономный округ"></option>/>
+            <option value="Ярославская область"></option> />
+
+    </body>
+</html>
